@@ -5,6 +5,7 @@ title-img: images/2016/physical-web/one.png
 ---
 
 Hi everyone! This blog post is about a project I did couple of months ago on Physical Web.I will not go deep into the literature and will dive straight into the implementation part.For more information on Physical Web follow this [link](https://google.github.io/physical-web/).
+<!--more-->
 
 Choosing hardware – Any BLE 4.0+ chip would do.In our project we have used Read Bear Lab's
 BLE Shield which incorporates Nrf8001 bluetooth low energy chip.
@@ -44,7 +45,8 @@ Eddystone allows for 31 Bytes of data to be transmitted in one frame.So if your 
 // Blend  Micro               6, 7, 4
 // RBL BLE Shield             9, 8, UNUSED
 
-EddystoneBeacon eddystoneBeacon =  EddystoneBeacon(EDDYSTONE_BEACON_REQ, EDDYSTONE_BEACON_RDY, EDDYSTONE_BEACON_RST);
+EddystoneBeacon eddystoneBeacon =  EddystoneBeacon(EDDYSTONE_BEACON_REQ, 
+	EDDYSTONE_BEACON_RDY, EDDYSTONE_BEACON_RST);
 
 void setup() {
 	Serial.begin(9600);
@@ -64,7 +66,8 @@ void loop(){
 * EddystoneBeacon eddystoneBeacon = EddystoneBeacon(...) makes an object of the class with three arguments which are the pins.The actual definition inside the library ( *EddystoneBeacon.cpp* ) looks as follows:
 
 {% highlight cpp %}
-EddystoneBeacon::EddystoneBeacon(unsigned char req, unsigned char rdy, unsigned char rst) :
+EddystoneBeacon::EddystoneBeacon(unsigned char req, unsigned char rdy, 
+	unsigned char rst) :
   BLEPeripheral(req, rdy, rst),
   _bleService("feaa"),
   _bleCharacteristic("feab", BLERead | BLEBroadcast, MAX_SERVICE_DATA_SIZE)
@@ -119,7 +122,8 @@ The web application runs a node server at the back end.In the front end, what we
 {% highlight js %}
 	  bluetoothDevice = null;
     var writeButton = document.querySelector('#fillUp');
-    navigator.bluetooth.requestDevice({ filters: [{ services: [ '713d0000-503e-4c75-ba94-3148f18d941e' ] }] })
+    navigator.bluetooth.requestDevice({ filters: [{ services: 
+    [ '713d0000-503e-4c75-ba94-3148f18d941e' ] }] })
     .then(device => {
 {% endhighlight %}
 
