@@ -4,10 +4,20 @@ title: About
 permalink: /about/
 ---
 
-![My helpful screenshot]({{ site.url }}/images/smallCar4.jpg)
+I am an aspiring Artificial Intelligence researcher.
 
-I am a software engineer from Vienna, Austria with a university degree in Molecular Biology/Bioinformatics and have most recently been working as a Product Manager for [Roche Diagnostics](http://www.roche.com/about/business/diagnostics.htm). I am currently on educational leave to focus 100% on improving my software development skills. At the moment I am visiting the [Computational Genomics Lab](https://cgl.genomics.ucsc.edu/) at the University of California Santa Cruz where I am working on the [visualization of graph genomes](https://github.com/wolfib/sequenceTubeMap).
+### Achievements
 
-When I'm not working I enjoy being outdoors and dabble in various kinds of water and mountain sports.
+* Winner @[Intel Ultimate Coder Challenge](https://software.intel.com/en-us/blogs/2016/08/05/the-intel-ultimate-coder-challenge-for-iot-winners-have-been-chosen)
+* Winner @[Eclipse Open IOT Challenge](https://www.eclipse.org/org/press-release/20160310_iotchallenge_winners2016.php)
+* Second Runner Up @[Intel IoT Roadshow](https://drive.google.com/file/d/0ByuvNaTkATl-MUlRWnh4Nl9uaVE/view?usp=sharing)
+* Featured in [Vice Motherboard Magazine](http://motherboard.vice.com/blog/a-cognitive-healthcare-system-is-changing-medical-practices-in-remote-areas)
 
-Feel free to contact me via [email](mailto:{{ site.footer-links.email }}) or on [Twitter](https://twitter.com/{{ site.footer-links.twitter }}).
+### Hobbies
+
+* I like to sing and play guitar in my free time.
+
+### Contact
+
+* Email [arun_kumar271@hotmail.com](mailto:arun_kumar271@hotmail.com)
+
