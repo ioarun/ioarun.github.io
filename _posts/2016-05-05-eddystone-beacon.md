@@ -8,7 +8,8 @@ Hi everyone! This blog post is about a project I did couple of months ago on Phy
 
 Choosing hardware – Any BLE 4.0+ chip would do.In our project we have used Read Bear Lab's
 BLE Shield which incorporates Nrf8001 bluetooth low energy chip.
-![one]({{ site.baseurl }}/images/2016/physical-web/one.png)
+
+{% include image.html img="images/2016/physical-web/one.png" title="one" caption="Red Bear Lab BLE Shield" %}
 
 ## How To Create a Beacon?
 
@@ -16,7 +17,7 @@ Beacons are tiny modules which broadcast radio signals continuously or after reg
 time( in our case it is 100 ms).In this project we have used the above mentioned shield and Arduino
 Mega board to *create* a beacon.
 
-![two]({{ site.baseurl }}/images/2016/physical-web/two.jpg)
+{% include image.html img="images/2016/physical-web/one.png" title="two" caption="Arduino Mega" %}
 
 ## Library Used : BLEPeripheral by Sandeep Mistry
 
@@ -32,7 +33,7 @@ Eddystone allows for 31 Bytes of data to be transmitted in one frame.So if your 
 
 * Basic code :
 
-```cpp
+{% highlight cpp %}
 // Import libraries (EddystonBeacon depends on SPI)
 #include <SPI.h>
 #include <EddystoneBeacon.h>
@@ -58,11 +59,11 @@ void setup() {
 void loop(){
 	eddystoneBeacon.loop();
 }
+{% endhighlight %}
 
-```
 * EddystoneBeacon eddystoneBeacon = EddystoneBeacon(...) makes an object of the class with three arguments which are the pins.The actual definition inside the library ( *EddystoneBeacon.cpp* ) looks as follows:
 
-```cpp
+{% highlight cpp %}
 EddystoneBeacon::EddystoneBeacon(unsigned char req, unsigned char rdy, unsigned char rst) :
   BLEPeripheral(req, rdy, rst),
   _bleService("feaa"),
@@ -75,8 +76,8 @@ EddystoneBeacon::EddystoneBeacon(unsigned char req, unsigned char rdy, unsigned 
   this->addAttribute(this->_bleService);
   this->addAttribute(this->_bleCharacteristic);
 }
+{% endhighlight %}
 
-```
 There are couple of important things inside this definition.
 
 *Services* and *Characteristics*- A call to this constructor initializes our beacon with service and characteristics.Service is a 128 bit data which acts as an identity of the eddystone frame.Next comes the characteristics which can be considered the main elements that give certain properties to your BLE device.You can customize in any which way you want to. Just that at the scanning end you have to already know this data.It acts as a carrier of the information.We can similarly create characteristic for transmission and reception.
@@ -85,7 +86,7 @@ There are couple of important things inside this definition.
 
 * `EddystoneBeacon.begin(...)` will begin broadcasting the power and URL data.
 
-```cpp
+{% highlight cpp %}
 void EddystoneBeacon::begin(char power, const char* uri) {
   this->_power = power;
   this->setURI(uri);
@@ -94,7 +95,8 @@ void EddystoneBeacon::begin(char power, const char* uri) {
 
   this->_bleCharacteristic.broadcast();
 }
-```
+{% endhighlight %}
+
 * `EddystoneBeacon.loop()` will poll infinitely.
 
 ## Use Case : Smart Meter
@@ -103,7 +105,8 @@ We created a setup which consists of an electronic valve( 230V) , one 5V relay, 
 The idea was to simulate a scenario where a bike driver when in the vicinity of a petrol pump, will get notified on his/her smarphone about it.He/she can then approach the pump, tap on the notification and get redirected to a web-page/web-application which enabled him/her to interact with the petrol pump.Once he sees the webpage, he can pair his phone to the petrol pump( beacon ) and enter the volume of the fluid to be filled in his phone.On sending the command to fill, the beacon recieves it and turns the valve ON till the said amount is filled.
 At last, this guy can disconnect from the beacon.
 
-![three]({{ site.baseurl }}/images/2016/physical-web/three.png)
+{% include image.html img="images/2016/physical-web/three.png" title="three" caption="Block Diagram" %}
+
 
 ## Web Bluetooth API and the Web Application
 
@@ -113,18 +116,18 @@ The web application runs a node server at the back end.In the front end, what we
 
 * Requesting the bluetooth adaptor 
 
-```js
+{% highlight js %}
 	  bluetoothDevice = null;
     var writeButton = document.querySelector('#fillUp');
     navigator.bluetooth.requestDevice({ filters: [{ services: [ '713d0000-503e-4c75-ba94-3148f18d941e' ] }] })
     .then(device => {
-      
-```
+{% endhighlight %}
+
 Notice here *[{services: [...]}]* is the serivice number for BLE tx and rx.
 
 * Connect to the GATT Server.This call will return a server object that will be used to connect to BLE Service.
 
-```js
+{% highlight js %}
 	.then(device => {
         bluetoothDevice = device;
         return bluetoothDevice.connectGATT();
@@ -133,10 +136,11 @@ Notice here *[{services: [...]}]* is the serivice number for BLE tx and rx.
         // Getting Service...
         return server.getPrimaryService('713d0000-503e-4c75-ba94-3148f18d941e');
       })
-```
+{% endhighlight %}
+
 * After this, the object returned will be used to seperately access the Tx and Rx Characteristics.We will add an eventlistner and handler function to the Tx Characteristic and will send the commands to our beacon using Rx Characteristic.
 
-```js
+{% highlight js %}
 	.then(service => {
         bleService = service;
         //alert("primaryService passed!");
@@ -159,10 +163,11 @@ Notice here *[{services: [...]}]* is the serivice number for BLE tx and rx.
       })
 
     .catch(error => { alert(error);
-```
+{% endhighlight %}
+
 * Handler Function
 
-```js
+{% highlight js %}
 	function handleNotifications(event) {
         let value = event.target.value;
         var textDecoder = new TextDecoder();
@@ -182,11 +187,11 @@ Notice here *[{services: [...]}]* is the serivice number for BLE tx and rx.
           hideHover: 'auto'
         });
     }
+{% endhighlight %}
 
-```
 * Writing data to beacon/Sending Commands
 
-```js
+{% highlight js %}
   	writeButton.addEventListener('click', function () {
           // Get the bytes for the text
         let input = document.getElementById("inputValue").value;
@@ -194,7 +199,7 @@ Notice here *[{services: [...]}]* is the serivice number for BLE tx and rx.
         let text = encoder.encode(input);
         writeCharacteristic.writeValue(text);
     });
-```
+{% endhighlight %}
 
 ## Workflow overview:
 
