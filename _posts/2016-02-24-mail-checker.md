@@ -7,6 +7,7 @@ This was a project I did last year.As soon as I learnt about accessing GPIO in G
 
 Target :  To switch LED on whenever a new mail is received and turn it off when all messages have been read.
 <!--more-->
+
 This project is based on IMAPClient library in Python. The python script is executed on the Debian running Intel Galileo Gen 2 board.
 
 GPIO Mapping : I am using `gpio38` of Galileo which is mapped to Digital Pin number 7 of Arduino.
