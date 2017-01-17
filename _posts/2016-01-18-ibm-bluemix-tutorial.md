@@ -1,7 +1,6 @@
 ---
 layout: post
 title: IBM Bluemix - IOT Tutorial
-title-img: images/2016/ibm-bluemix/2016-01-18-one.png
 ---
 
 It’s been quite some time now that I have been playing with IBM Bluemix platform and applying it in various IOT projects.You can make your application on this platform and bind it to some services.The services can not only be used by the run time applications on bluemix but also can be accessed by programs running on remote machines.This tutorial will be on how to set up IBM Bluemix for using it's IOTF service.The client that I'll be using is a python client.

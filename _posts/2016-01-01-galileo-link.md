@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Galileo-Link - Connect THINGS to Social Network
-title-img: images/2016/galileo-link/2016-01-01-galileo-link.jpg
 ---
 Hello people!The following project is a basic implementation of what can later give rise to a dedicated social network for sensors. Have you ever wondered how would it be if all your inanimate things can talk on social network like Facebook, twitter? Green-house updating it’s health on it’s timeline? This project is an effort to give social life to the “things”.
 
