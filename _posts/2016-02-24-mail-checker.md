@@ -14,7 +14,7 @@ GPIO Mapping : I am using `gpio38` of Galileo which is mapped to Digital Pin num
 
 IMAPClient installation:
 
-{% highlight %}
+{% highlight python %}
 wget http://freshfoo.com/projects/IMAPClient/IMAPClient-0.13.zip
 unzip IMAPClient-0.13.zip
 
@@ -25,7 +25,7 @@ python2.7 setup.py install
 
 After installation , if there is some path error , you can type following in the terminal:
 
-{% highlight %}
+{% highlight python %}
 export PATH=$PATH:path/to/dir
 
 in this case , path/to/dir is /home/IMAPClient-0.13
