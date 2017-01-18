@@ -1,7 +1,7 @@
 ---
 layout : default
 title : Implementing Physical Web using Eddystone 
-title-img: images/2016/physical-web/one.png
+title-img: images/2016/physical-web/four.gif
 ---
 
 Hi everyone! This blog post is about a project I did couple of months ago on Physical Web.I will not go deep into the literature and will dive straight into the implementation part.For more information on Physical Web follow this [link](https://google.github.io/physical-web/).
