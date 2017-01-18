@@ -1,6 +1,7 @@
 ---
 layout : default
 title : Mail-Checker using Intel Galileo
+title-img : images/2016/mail-checker/five.jpg
 ---
 
 This was a project I did last year.As soon as I learnt about accessing GPIO in Galileo, I wanted to implement it somehow. So I decided to make my own Mail-Checker.
