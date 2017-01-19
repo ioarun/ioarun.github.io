@@ -2,6 +2,7 @@
 layout: post
 title: Galileo-Link - Connect THINGS to Social Network
 ---
+
 Hello people!The following project is a basic implementation of what can later give rise to a dedicated social network for sensors. Have you ever wondered how would it be if all your inanimate things can talk on social network like Facebook, twitter? Green-house updating it’s health on it’s timeline? This project is an effort to give social life to the “things”.
 <!--more-->
 
@@ -49,4 +50,7 @@ Now the next important thing is the page ID which can be found in About tab of t
 Follow this [link](https://github.com/ioarun/galileo-link) to my github and find the python script for this project.
 Here is the [link](https://www.facebook.com/profile.php?id=100009541012933) to my Galileo-Link!
 Do follow for more interesting posts!
+
+
+
 
