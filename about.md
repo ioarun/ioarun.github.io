@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am an aspiring Artificial Intelligence researcher.
+I am an aspiring Artificial Intelligence researcher.I am currently working on Reinforcement Learning related problems.Previous to this, I did projects in several domains one of which was Internet of Things.When I am not doing all this, I enjoy playing guitar or reading on my kindle. 
 
 ### Achievements
 
@@ -12,10 +12,6 @@ I am an aspiring Artificial Intelligence researcher.
 * Winner @[Eclipse Open IOT Challenge](https://www.eclipse.org/org/press-release/20160310_iotchallenge_winners2016.php)
 * Second Runner Up @[Intel IoT Roadshow](https://drive.google.com/file/d/0ByuvNaTkATl-MUlRWnh4Nl9uaVE/view?usp=sharing)
 * Featured in [Vice Motherboard Magazine](http://motherboard.vice.com/blog/a-cognitive-healthcare-system-is-changing-medical-practices-in-remote-areas)
-
-### Hobbies
-
-* I like to sing and play guitar in my free time.
 
 ### Contact
 
