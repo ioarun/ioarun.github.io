@@ -35,13 +35,13 @@ Now all you need is internet connectivity in Galileo and run the python code giv
 
 As you can see, after reading all the messages, the mail-checker shows ‘0’ messages.
 
-![three]({{ site.baseurl }}/images/2016/mail-checker/three.png)
+{% include image.html img="images/2016/mail-checker/three.png" title="three" caption="" %}
 
 Also it should be noted that the script logs into the email account after every 60 seconds to keep the check on the emails.
 
-![four]({{ site.baseurl }}/images/2016/mail-checker/four.png)
+{% include image.html img="images/2016/mail-checker/four.png" title="four" caption="" %}
 
-![five]({{ site.baseurl }}/images/2016/mail-checker/five.jpg)
+{% include image.html img="images/2016/mail-checker/five.jpg" title="five" caption="" %}
 
 That’s it. Mail-checker is ready for action!
 
