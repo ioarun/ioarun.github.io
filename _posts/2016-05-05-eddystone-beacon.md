@@ -18,7 +18,7 @@ Beacons are tiny modules which broadcast radio signals continuously or after reg
 time( in our case it is 100 ms).In this project we have used the above mentioned shield and Arduino
 Mega board to *create* a beacon.
 
-{% include image.html img="images/2016/physical-web/one.png" title="two" caption="Arduino Mega" %}
+{% include image.html img="images/2016/physical-web/two.jpg" title="two" caption="Arduino Mega" %}
 
 ## Library Used : BLEPeripheral by Sandeep Mistry
 
