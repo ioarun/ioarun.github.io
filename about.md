@@ -6,6 +6,8 @@ permalink: /about/
 
 I am an aspiring Artificial Intelligence researcher.I am currently working on Reinforcement Learning related problems.Previous to this, I did projects in several domains one of which was Internet of Things.When I am not doing all this, I enjoy playing guitar or reading on my kindle. 
 
+> "We can only see a short distance ahead, but we can see plenty there that needs to be done."
+
 ### Achievements
 
 * Winner @[Intel Ultimate Coder Challenge](https://software.intel.com/en-us/blogs/2016/08/05/the-intel-ultimate-coder-challenge-for-iot-winners-have-been-chosen)
