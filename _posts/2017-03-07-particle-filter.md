@@ -8,7 +8,7 @@ Robot world is exciting! For people completely unaware of what goes inside the r
 
 <!--more-->
 
-# What is localization?
+## What is localization?
 
 Imagine that you are blind folded and somehow all you know about the surrounding is as far as you can stretch out your hands to touch the surrounding obstacles.This would give you an approximation of the distance of an obstacle from you in the surrounding but not your orientation in global coordinate system(surrounding).This information is not sufficient to know your exact location in the surrounding.
 
@@ -19,7 +19,7 @@ Take another example of a moving car.The GPS might show the car coordinates pret
 Localization makes sure that we reduce this error by as much as possible from the given sensor information and dynamics of the car.
 
 
-# What is particle filter?
+## What is particle filter?
 
 Consider the first example where you had to examine the surrounding by your hands.Suppose there are N of you and are randomly spread out in the surrounding and each of you have a distance vector which contains the distances from each of the obstacles.Since there are 1000 of yous, many of them would be in the vicinity of you near the same obstacle.Ofcourse the orientation may vary.Currently all the human beings are uniformally distributed.Until the next step which is called resampling.In resampling process only the humans near you would remain and others will disappear.You are said to be somewhat localized.
 
