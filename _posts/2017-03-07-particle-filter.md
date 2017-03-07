@@ -6,6 +6,8 @@ title-img : images/2017/particle-filter/particle-filter.gif
 
 Robot world is exciting! For people completely unaware of what goes inside the robots and how they manage to do what they do, it seems almost magical.In this post I will try to scratch the surface of one very important part of robotics called robot localization.
 
+<!--more-->
+
 # What is localization?
 
 Imagine that you are blind folded and somehow all you know about the surrounding is as far as you can stretch out your hands to touch the surrounding obstacles.This would give you an approximation of the distance of an obstacle from you in the surrounding but not your orientation in global coordinate system(surrounding).This information is not sufficient to know your exact location in the surrounding.
