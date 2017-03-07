@@ -39,7 +39,7 @@ This class contains robot specific methods like
 
 Instantiation of the robot class creates an object with random location and orientation.Let's call this object `car`. Then we will create `particles`. Make an empty list called `particles` and append it with the robot objects called `particle`.I created 1000 such particles.
 
-{% include image.html img="images/2017/particle-filter/initial_state.png" title="Initial state of particles" caption="1000 particles distributed uniformly in the space" %}
+{% include image.html img="images/2017/particle-filter/initial_condition.png" title="Initial state of particles" caption="1000 particles distributed uniformly in the space" %}
 
 The figure above is a screen shot of my pygame screen.The blue circles are the landmarks.The car sprite is located in the center of the screen in the initial state and particles (green dots) are uniformly distributed on the screen.
 
