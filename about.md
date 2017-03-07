@@ -15,6 +15,6 @@ I am an aspiring Artificial Intelligence researcher.I am currently working on Re
 * Winner @[Intel Ultimate Coder Challenge](https://software.intel.com/en-us/blogs/2016/08/05/the-intel-ultimate-coder-challenge-for-iot-winners-have-been-chosen)
 * Winner @[Eclipse Open IOT Challenge](https://www.eclipse.org/org/press-release/20160310_iotchallenge_winners2016.php)
 * Second Runner Up @[Intel IoT Roadshow](https://drive.google.com/file/d/0ByuvNaTkATl-MUlRWnh4Nl9uaVE/view?usp=sharing)
-* Featured in [Vice Motherboard Magazine](http://motherboard.vice.com/blog/a-cognitive-healthcare-system-is-changing-medical-practices-in-remote-areas)
+* Featured in [Vice Motherboard Magazine](https://motherboard.vice.com/en_us/article/a-cognitive-healthcare-system-is-changing-medical-practices-in-remote-areas)
 
 
