@@ -4,7 +4,7 @@ title : Robot Localization using Particle Filter
 title-img : images/2017/particle-filter/particle-filter.gif
 ---
 
-Robot world is exciting! For people completely unaware of what goes inside the robots and how they manage to do what they do, it seems almost magical.In this post I will try to scratch the surface of one very important part of robotics called robot localization.
+Robot world is exciting! For people completely unaware of what goes inside the robots and how they manage to do what they do, it seems almost magical.In this post, with the help of an implementation, I will try to scratch the surface of one very important part of robotics called robot localization.
 
 <!--more-->
 
@@ -19,9 +19,27 @@ Take another example of a moving car.The GPS might show the car coordinates pret
 Localization makes sure that we reduce this error by as much as possible from the given sensor information and dynamics of the car.
 
 
-## What is particle filter?
+## Particle Filter
 
 Consider the first example where you had to examine the surrounding by your hands.Suppose there are N of you and are randomly spread out in the surrounding and each of you have a distance vector which contains the distances from each of the obstacles.Since there are 1000 of yous, many of them would be in the vicinity of you near the same obstacle.Ofcourse the orientation may vary.Currently all the human beings are uniformally distributed.Until the next step which is called resampling.In resampling process only the humans near you would remain and others will disappear.You are said to be somewhat localized.
 
 Formally, a particle is a discrete guess of where a robot may be located.Also, regularly, these particles are resampled from the distribution so that the particles consistent with the measurements *survive*.After successfull localization, the particles are collected in a region of high probability of the robot.
+
+## Localize a Car!
+
+Having taken the CS373 course on Udacity on AI for robotics, I had an urge to build my own robotic self-driving car.I am in the process to build it in simulation.This post is one part of it.I tried to build a 2D demo of robot-car localization using Python and Pygame.You can find the source code [here](https://github.com/ioarun/pygame-robotics/blob/master/particle-filter/particle-filter-2.py).
+
+#### Create a robot class
+
+This class contains robot specific methods like 
+*set()* -  to set x, y and orientation
+*set_noise()* - to set forward motion noise, turn noise and bearing noise
+*move()* - to move robot
+*sense()* - to sense the bearing angle (angle between heading of robot and landmark location)
+
+
+
+
+
+
 
