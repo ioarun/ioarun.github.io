@@ -27,6 +27,7 @@ I am an aspiring Artificial Intelligence researcher.I am currently working on ro
 * [Vice Motherboard Magazine](https://motherboard.vice.com/en_us/article/a-cognitive-healthcare-system-is-changing-medical-practices-in-remote-areas)
 * [CodeProject](https://www.codeproject.com/articles/1165860/WebControls/)
 * [Digit](http://www.digit.in/apps/intel-ultimate-coder-challenge-for-iot-what-is-team-vaidya-up-to-now-33481.html)
+* [NewsDog](http://www.newsdog.today/a/article/5776231a76f3dffb593291ae/)
 
 
 
