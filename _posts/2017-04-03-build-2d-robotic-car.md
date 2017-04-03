@@ -69,7 +69,7 @@ Now that we have got the center of the circle, we can find the new position `(x'
 <body>
  $$x' = {Cx + Rsin (\theta + \beta)}$$
  $$y' = {Cy - Rcos (\theta + \beta)}$$
- $${\theta} ' = {(\theta + \beta) mod 2 \pi}$$
+ $${\theta} ' = {(\theta + \beta) % 2 \pi}$$
 
 </body>
 <html>
@@ -129,7 +129,7 @@ steering_angle = - 0.1 * crosstrack_error - 0.5 * diff_crosstrack_error
 
 <h2> Car body </h2>
 
-The car body is a 80px by 60px yellow trianlge with four 20px by 6px wheels.In the last blog post I had used a car sprite for demonstrating the particle filter localization.It was pretty easy because image rotation method is available in pygame.But rectangle rotation is not available.So I decided to write my own method for rectangle rotation.The method draw_rect() takes four arguments `center, corners, rotation_angle and color`.The center is center of the rectangle, corners is a list of the position of 4 corners before rotation, rotation_angle is the angle by which the rectangle will rotate.
+The car body is a 80px by 60px yellow trianlge with four 20px by 6px wheels.In the last blog post I had used a car sprite for demonstrating the particle filter localization.It was pretty easy because image rotation method is available in pygame.But rectangle rotation is not available.So I decided to write my own method for rectangle rotation.The method draw_rect() takes four arguments center, corners, rotation_angle and color.The center is center of the rectangle, corners is a list of the position of 4 corners before rotation, rotation_angle is the angle by which the rectangle will rotate.
 
 {% highlight python %}
 
@@ -157,6 +157,6 @@ The car body is a 80px by 60px yellow trianlge with four 20px by 6px wheels.In t
 
 The method iterates through all the four corners and calculates the length of each from the center.And using atan2, gets the angle between center and the corner before rotation.Then the rotation angle delta_angle is added to this.The new position is calculated using simple trigonotmetry equations as shown above.
 
-I was specially interested in implementing this method because I wanted to see steering wheels in action.In wheel motion, there are three angles involved.Let's take just one steering wheel.First we must know the new center of the wheel after rotation.We get this by rotating the current center of the wheel by orientation angle.Then using this newly found center, we draw four corners of the wheel (aligned in +x direction).We call `draw_rect() using newly found center and the corners.We find the angle between each corner and the new center of the wheel.Next we rotate the corners by steering angle to get final positon of each corner of the wheel.
+I was specially interested in implementing this method because I wanted to see steering wheels in action.In wheel motion, there are three angles involved.Let's take just one steering wheel.First we must know the new center of the wheel after rotation.We get this by rotating the current center of the wheel by orientation angle.Then using this newly found center, we draw four corners of the wheel (aligned in +x direction).We call draw_rect() using newly found center and the corners.We find the angle between each corner and the new center of the wheel.Next we rotate the corners by steering angle to get final positon of each corner of the wheel.
 
-You can find the implementation code and the racetrack image that I have used [here](https://github.com/ioarun/pygame-robotics/blob/master/moving-robot/moving-robot-2.py).
+You can find the implementation code and the racetrack image that I have used <a href='https://github.com/ioarun/pygame-robotics/blob/master/moving-robot/moving-robot-2.py'>here</a>.I hope you found this post helpful.Until next time!
