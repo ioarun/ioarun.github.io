@@ -1,7 +1,7 @@
 ---
 layout : default
 title : Build a 2D Robotic Car!
-title-img : images/2017/robotic-filter/racetrack-control.gif
+title-img : images/2017/robotic-car/racetrack-control.gif
 ---
 
 In the last blog post I explained what is a particle filter and how we can build one using pygame and python.In this post, I will walk you through the steps to build a 2D robotic car and get it running using PD control.
@@ -69,7 +69,7 @@ Now that we have got the center of the circle, we can find the new position `(x'
 <body>
  $$x' = {Cx + Rsin (\theta + \beta)}$$
  $$y' = {Cy - Rcos (\theta + \beta)}$$
- $$\theta ' = {(\theta + \beta) %2 \pi}$$
+ $$\theta ' = {(\theta + \beta) mod 2 \pi}$$
 
 </body>
 <html>
