@@ -10,7 +10,7 @@ In the last blog post I explained what is a particle filter and how we can build
 
 I am building visual demonstration of the problems given in Udacity's Course on Artificial Intelligence for Robotics.So, let's begin!
 
-## Bicycle Model
+<h2> Bicycle Model </h2>
 
 Our robotic car has two fixed rear wheels and two front steereable wheels.The vehicle motion can be explained by splitting the vehicle vertically so that we get something called a bicycle model as shown below.
 
@@ -69,7 +69,7 @@ Now that we have got the center of the circle, we can find the new position `(x'
 <body>
  $$x' = {Cx + Rsin (\theta + \beta)}$$
  $$y' = {Cy - Rcos (\theta + \beta)}$$
- $$\theta ' = {(\theta + \beta) mod 2 \pi}$$
+ $${\theta} ' = {(\theta + \beta) mod 2 \pi}$$
 
 </body>
 <html>
@@ -117,7 +117,7 @@ The CTE is the deviation from the reference line on the car's track.I have desig
 {% endhighlight %}
 
 
-## PD Controller
+<h2> PD Controller </h2>
 
 The PD Controller adjusts the steering angle by doing two very intuitive things.If the car is very far from the reference line, the steering angle should be very high.Also, the CTE will be very high.This means, that the steering angle is proportional to the CTE.Now, the only thing the car is basing its value of steering angle is the CTE.It might happen that the value of steering angle is more than required and it overshoots.How would the car know it is nearing the reference line? One way to do is by adding a derivative term in the controller.This will keep the track of how fast the CTE is changing.If there is not much change, the derivative value will be less and it would mean that the car is near the reference line. The value of steering angle then would be small.
 
@@ -127,7 +127,7 @@ steering_angle = - 0.1 * crosstrack_error - 0.5 * diff_crosstrack_error
 
 {% endhighlight %}
 
-## Car body
+<h2> Car body </h2>
 
 The car body is a 80px by 60px yellow trianlge with four 20px by 6px wheels.In the last blog post I had used a car sprite for demonstrating the particle filter localization.It was pretty easy because image rotation method is available in pygame.But rectangle rotation is not available.So I decided to write my own method for rectangle rotation.The method draw_rect() takes four arguments `center, corners, rotation_angle and color`.The center is center of the rectangle, corners is a list of the position of 4 corners before rotation, rotation_angle is the angle by which the rectangle will rotate.
 
@@ -159,4 +159,4 @@ The method iterates through all the four corners and calculates the length of ea
 
 I was specially interested in implementing this method because I wanted to see steering wheels in action.In wheel motion, there are three angles involved.Let's take just one steering wheel.First we must know the new center of the wheel after rotation.We get this by rotating the current center of the wheel by orientation angle.Then using this newly found center, we draw four corners of the wheel (aligned in +x direction).We call `draw_rect() using newly found center and the corners.We find the angle between each corner and the new center of the wheel.Next we rotate the corners by steering angle to get final positon of each corner of the wheel.
 
-You can find the implementation code and the racetrack image that I have used here.
+You can find the implementation code and the racetrack image that I have used [here](https://github.com/ioarun/pygame-robotics/blob/master/moving-robot/moving-robot-2.py).
