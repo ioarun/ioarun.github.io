@@ -69,7 +69,7 @@ Now that we have got the center of the circle, we can find the new position `(x'
 <body>
  $$x' = {Cx + Rsin (\theta + \beta)}$$
  $$y' = {Cy - Rcos (\theta + \beta)}$$
- $${\theta} ' = {(\theta + \beta) % 2 \pi}$$
+ $${\theta} ' = {(\theta + \beta) mod 2 \pi}$$
 
 </body>
 <html>
@@ -155,8 +155,8 @@ The car body is a 80px by 60px yellow trianlge with four 20px by 6px wheels.In t
 
 {% endhighlight %}
 
-The method iterates through all the four corners and calculates the length of each from the center.And using atan2, gets the angle between center and the corner before rotation.Then the rotation angle delta_angle is added to this.The new position is calculated using simple trigonotmetry equations as shown above.
+<p> The method iterates through all the four corners and calculates the length of each from the center.And using atan2, gets the angle between center and the corner before rotation.Then the rotation angle delta_angle is added to this.The new position is calculated using simple trigonotmetry equations as shown above.</p>
 
-I was specially interested in implementing this method because I wanted to see steering wheels in action.In wheel motion, there are three angles involved.Let's take just one steering wheel.First we must know the new center of the wheel after rotation.We get this by rotating the current center of the wheel by orientation angle.Then using this newly found center, we draw four corners of the wheel (aligned in +x direction).We call draw_rect() using newly found center and the corners.We find the angle between each corner and the new center of the wheel.Next we rotate the corners by steering angle to get final positon of each corner of the wheel.
+<p>I was specially interested in implementing this method because I wanted to see steering wheels in action.In wheel motion, there are three angles involved.Let's take just one steering wheel.First we must know the new center of the wheel after rotation.We get this by rotating the current center of the wheel by orientation angle.Then using this newly found center, we draw four corners of the wheel (aligned in +x direction).We call draw_rect() using newly found center and the corners.We find the angle between each corner and the new center of the wheel.Next we rotate the corners by steering angle to get final positon of each corner of the wheel.</p>
 
 You can find the implementation code and the racetrack image that I have used <a href='https://github.com/ioarun/pygame-robotics/blob/master/moving-robot/moving-robot-2.py'>here</a>.I hope you found this post helpful.Until next time!
