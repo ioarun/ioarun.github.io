@@ -8,7 +8,7 @@ In the last blog post I explained what is a particle filter and how we can build
 
 <!--more-->
 
-I am building visual demonstration of the problems given in Udacity's Course on Artificial Intelligence for Robotics.So, let's begin!
+I am building visual demonstration of the problems given in Udacity's Course on Artificial Intelligence for Robotics.You can find the implementation code <a href='https://github.com/ioarun/ai-for-robotics-udacity/blob/master/visual-implementation/racetrack-control.py'>here</a>.
 
 <h2> Bicycle Model </h2>
 
@@ -159,4 +159,4 @@ The car body is a 80px by 60px yellow trianlge with four 20px by 6px wheels.In t
 
 <p>I was specially interested in implementing this method because I wanted to see steering wheels in action.In wheel motion, there are three angles involved.Let's take just one steering wheel.First we must know the new center of the wheel after rotation.We get this by rotating the current center of the wheel by orientation angle.Then using this newly found center, we draw four corners of the wheel (aligned in +x direction).We call draw_rect() using newly found center and the corners.We find the angle between each corner and the new center of the wheel.Next we rotate the corners by steering angle to get final positon of each corner of the wheel.</p>
 
-You can find the implementation code and the racetrack image that I have used <a href='https://github.com/ioarun/pygame-robotics/blob/master/moving-robot/moving-robot-2.py'>here</a>.I hope you found this post helpful.Until next time!
+You can find the implementation code and the racetrack image that I have used <a href='https://github.com/ioarun/ai-for-robotics-udacity/blob/master/visual-implementation/racetrack-control.py'>here</a>.I hope you found this post helpful.Until next time!
