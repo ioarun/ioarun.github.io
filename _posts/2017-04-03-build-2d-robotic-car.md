@@ -40,8 +40,8 @@ We are interested in finding what would be the position and orientation of our c
 </script>
 <head>
 <body>
- $$Cx = {x + Rsin \theta}$$
- $$Cy = {y - Rcos \theta}$$
+ $$Cx = {x - Rsin \theta}$$
+ $$Cy = {y + Rcos \theta}$$
 </body>
 <html>
 
