@@ -22,6 +22,6 @@ This model is useful in understanding the vehicle motion especially when taking 
 </script>
 <head>
 <body>
-$$R = {L \over \tan alpha;}.$$
+$$R = {L \over \tan \alpha;}.$$
 </body>
 <html>
