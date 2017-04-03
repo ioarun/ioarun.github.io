@@ -24,7 +24,7 @@ This model is useful in understanding the vehicle motion especially when taking 
 </script>
 <head>
 <body>
- $$R = {L \over \tan \alpha;}.$$
+ $$R = {L \over \tan \alpha}$$
 </body>
 <html>
 
@@ -39,8 +39,8 @@ We are interested in finding what would be the position and orientation of our c
 </script>
 <head>
 <body>
- $$Cx = {x \+ Rsin \theta;}.$$
- $$Cy = {y \- Rcos \theta;}.$$
+ $$Cx = {x + Rsin \theta}$$
+ $$Cy = {y - Rcos \theta}$$
 </body>
 <html>
 
@@ -53,6 +53,35 @@ Since we are using Pygame to build this car, the second equation above changes a
 </script>
 <head>
 <body>
- $$Cy = {y \- Rcos \theta;}.$$
+ $$Cy = {y - Rcos \theta}$$
+</body>
+<html>
+
+Now that we have got the center of the circle, we can find the new position `(x', y')` and orientation `theta`' as follows -
+
+<html>
+<head>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<head>
+<body>
+ $$x' = {Cx + Rsin (\theta + \beta)}$$
+ $$y' = {Cy - Rcos (\theta + \beta)}$$
+ $$\theta' = {(\theta + \beta)%2\pi}$$
+
+</body>
+<html>
+
+Again, we have to change the second equation according to the pygame coordinate system.
+
+<html>
+<head>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<head>
+<body>
+ $$y' = {Cy + Rcos (\theta + \beta)}$$
 </body>
 <html>
