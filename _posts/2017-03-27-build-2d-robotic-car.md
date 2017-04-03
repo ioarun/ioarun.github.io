@@ -13,7 +13,7 @@ Our robotic car has two fixed rear wheels and two front steereable wheels.The ve
 
 {% include image.html img="images/2017/robotic-car/next_condition.png" title="Localized car" caption="Small green dot is actually 1000 particles on top of each other localizing the car." %}
 
-This model is useful in understanding the vehicle motion especially when taking a turn.Let's say our car starts to take a right turn. Assuming the steering angle to be `alpha`, the radius of the circle that the rear wheel makes while taking the turn to be `R`, and the distance between the front and rear wheel be `L`.
+This model is useful in understanding the vehicle motion especially when taking a turn.Let's say our car starts to take a right turn. Assuming the steering angle to be <html>&alpha;<html>, the radius of the circle that the rear wheel makes while taking the turn to be `R`, and the distance between the front and rear wheel be `L`.
 
 <html>
 <head>
@@ -22,7 +22,8 @@ This model is useful in understanding the vehicle motion especially when taking 
 </script>
 <head>
 <body>
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+
+there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 </body>
 <html>
