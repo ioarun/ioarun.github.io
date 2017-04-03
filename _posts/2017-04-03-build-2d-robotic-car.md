@@ -161,5 +161,6 @@ The car body is a 80px by 60px yellow trianlge with four 20px by 6px wheels.In t
 
 You can find the implementation code and the racetrack image that I have used <a href='https://github.com/ioarun/ai-for-robotics-udacity/blob/master/visual-implementation/racetrack-control.py'>here</a>.I hope you found this post helpful.Until next time!
 
-<img src="../images/2017/robotic-car/racetrack-control.gif" alt="Robotic Car">
+{% include image.html img="images/2017/robotic-car/racetrack-control.gif" title="Robotic Car" caption="Robotic car in motion! Observe how PD control is acting on steering wheels." %}
+
 
