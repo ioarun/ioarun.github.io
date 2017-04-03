@@ -16,7 +16,6 @@ Our robotic car has two fixed rear wheels and two front steereable wheels.The ve
 This model is useful in understanding the vehicle motion especially when taking a turn.Let's say our car starts to take a right turn. Assuming the steering angle to be `alpha`, the radius of the circle that the rear wheel makes while taking the turn to be `R`, and the distance between the front and rear wheel be `L`.
 
 <html>
-<title></title>
 <head>
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
