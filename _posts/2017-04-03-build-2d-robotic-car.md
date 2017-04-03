@@ -68,7 +68,7 @@ Now that we have got the center of the circle, we can find the new position `(x'
 <body>
  $$x' = {Cx + Rsin (\theta + \beta)}$$
  $$y' = {Cy - Rcos (\theta + \beta)}$$
- $$\theta' = {(\theta + \beta)%2\pi}$$
+ $${\theta'} = {(\theta + \beta)%2 \pi}$$
 
 </body>
 <html>
