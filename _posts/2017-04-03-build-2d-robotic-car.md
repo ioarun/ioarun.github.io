@@ -5,6 +5,8 @@ title : Build a 2D Robotic Car!
 
 In the last blog post I explained what is a particle filter and how we can build one using pygame and python.In this post, I will walk you through the steps to build a 2D robotic car and get it running using PD control.
 
+<!--more-->
+
 I am building visual demonstration of the problems given in Udacity's Course on Artificial Intelligence for Robotics.So, let's begin!
 
 ## Bicycle Model
@@ -37,8 +39,8 @@ We are interested in finding what would be the position and orientation of our c
 </script>
 <head>
 <body>
- $$Cx = {x \m Rsin \theta;}.$$
- $$Cy = {y \p Rcos \theta;}.$$
+ $$Cx = {x \+ Rsin \theta;}.$$
+ $$Cy = {y \- Rcos \theta;}.$$
 </body>
 <html>
 
@@ -51,6 +53,6 @@ Since we are using Pygame to build this car, the second equation above changes a
 </script>
 <head>
 <body>
- $$Cy = {y \m Rcos \theta;}.$$
+ $$Cy = {y \- Rcos \theta;}.$$
 </body>
 <html>
