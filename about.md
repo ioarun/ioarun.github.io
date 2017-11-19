@@ -8,6 +8,8 @@ I am an aspiring Artificial Intelligence researcher.I am currently working on ro
 
 *"We can only see a short distance ahead, but we can see plenty there that needs to be done."*
                                                                               *- Alan Turing*
+*"One of the goals of making robots more human-like is by making them do seamless mistakes as humans do"*
+                                                                              *- Me  :P*
 
 ### Interests
 
