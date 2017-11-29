@@ -21,6 +21,7 @@ I am an aspiring Artificial Intelligence researcher.I am currently working on ro
 * Winner @[Intel Ultimate Coder Challenge](https://software.intel.com/en-us/blogs/2016/08/05/the-intel-ultimate-coder-challenge-for-iot-winners-have-been-chosen)
 * Winner @[Eclipse Open IOT Challenge](https://www.eclipse.org/org/press-release/20160310_iotchallenge_winners2016.php)
 * Second Runner Up @[Intel IoT Roadshow](https://drive.google.com/file/d/0ByuvNaTkATl-MUlRWnh4Nl9uaVE/view?usp=sharing) 
+* Semifinalist “Texas Instruments Innovation Design Competition 2014”
 
 ### Work Featured in
 
@@ -29,6 +30,8 @@ I am an aspiring Artificial Intelligence researcher.I am currently working on ro
 * [CodeProject](https://www.codeproject.com/articles/1165860/WebControls/)
 * [Digit](http://www.digit.in/apps/intel-ultimate-coder-challenge-for-iot-what-is-team-vaidya-up-to-now-33481.html)
 * [NewsDog](http://www.newsdog.today/a/article/5776231a76f3dffb593291ae/)
+
+### 
 
 
 
