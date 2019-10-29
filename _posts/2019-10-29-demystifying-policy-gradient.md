@@ -12,9 +12,9 @@ I am building visual demonstration of the problems given in Udacity's Course on 
 
 You can find the implementation code and the racetrack image that I have used <a href='https://github.com/ioarun/ai-for-robotics-udacity/blob/master/visual-implementation/racetrack-control.py'>here</a>.I hope you found this post helpful.Until next time!
 
-<object data="https://github.com/ioarun/ioarun.github.io/demystifying-policy-gradient.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/ioarun/ioarun.github.io/demystifying-policy-gradient.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/ioarun/ioarun.github.io/demystifying-policy-gradient.pdf">Download PDF</a>.</p>
+<object data="https://github.com/ioarun/arunkrweb.github.io/demystifying-policy-gradient.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/ioarun/arunkrweb.github.io/demystifying-policy-gradient.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/ioarun/arunkrweb.github.io/demystifying-policy-gradient.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
