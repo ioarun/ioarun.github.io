@@ -1,3 +1,2 @@
-# Personal Blog of Arun Kumar
+The template was borrowed from https://stuartgeiger.com/ and the contents were modified. I own no rights of the template.
 
-What I learn, I try to put down on my blog.

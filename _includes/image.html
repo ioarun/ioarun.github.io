@@ -1,13 +1,15 @@
 <!-- _includes/image.html -->
-<div class="image-wrapper" >
+<center>
+<div class="image-wrapper">
     {% if include.url %}
-    <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
+    <a href="{{ include.url }}" title="{{ include.title }}">
     {% endif %}
-        <img src="{{ site.url }}/{{ include.img }}" alt="{{ include.title }}"/>
+        <img align="middle" src="{{ site.url }}/{{ include.img }}" alt="{{ include.title }}" style="border: 2px solid black; width: 500px; height: 400px"/>
     {% if include.url %}
     </a>
     {% endif %}
     {% if include.caption %}
-        <p class="image-caption">{{ include.caption }}</p>
+        <p align="center" class="image-caption" style="font-size:12px;">{{ include.caption }}</p>
     {% endif %}
 </div>
+</center>

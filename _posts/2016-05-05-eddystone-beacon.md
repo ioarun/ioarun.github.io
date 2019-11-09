@@ -1,8 +1,21 @@
 ---
-layout : default
-title : Implementing Physical Web using Eddystone 
-title-img: images/2016/physical-web/four.gif
+id: 3
+title: 'Implementing Physical Web using Eddystone'
+date: 2016-05-05T21:56:19+00:00
+author: arun
+author_profile: false
+excerpt: "Hi everyone! This blog post is about a project I did couple of months ago on Physical Web.I will not go deep into the literature and will dive straight into the implementation part.For more information on Physical Web follow this [link](https://google.github.io/physical-web/)."
+
+permalink: /posts/2016/05/physical-web/
+categories:
+  - Academic Works
+  - Unpublished
+tags:
+  - cnn
+  - convolutional-neural-networks
+  - machine-learning
 ---
+
 
 Hi everyone! This blog post is about a project I did couple of months ago on Physical Web.I will not go deep into the literature and will dive straight into the implementation part.For more information on Physical Web follow this [link](https://google.github.io/physical-web/).
 <!--more-->
@@ -10,7 +23,7 @@ Hi everyone! This blog post is about a project I did couple of months ago on Phy
 Choosing hardware – Any BLE 4.0+ chip would do.In our project we have used Read Bear Lab's
 BLE Shield which incorporates Nrf8001 bluetooth low energy chip.
 
-{% include image.html img="images/2016/physical-web/one.png" title="one" caption="Red Bear Lab BLE Shield" %}
+{% include image.html img="images/2016/physical-web/one.png" title="one" caption="Red Bear Lab BLE Shield" url="http://arunkrweb.github.io/images/2016/physical-web/one.png" %}
 
 ## How To Create a Beacon?
 
@@ -18,7 +31,7 @@ Beacons are tiny modules which broadcast radio signals continuously or after reg
 time( in our case it is 100 ms).In this project we have used the above mentioned shield and Arduino
 Mega board to *create* a beacon.
 
-{% include image.html img="images/2016/physical-web/two.jpg" title="two" caption="Arduino Mega" %}
+{% include image.html img="images/2016/physical-web/two.jpg" title="two" caption="Arduino Mega" url="http://arunkrweb.github.io/images/2016/physical-web/two.jpg" %}
 
 ## Library Used : BLEPeripheral by Sandeep Mistry
 
@@ -108,7 +121,7 @@ We created a setup which consists of an electronic valve( 230V) , one 5V relay, 
 The idea was to simulate a scenario where a bike driver when in the vicinity of a petrol pump, will get notified on his/her smarphone about it.He/she can then approach the pump, tap on the notification and get redirected to a web-page/web-application which enabled him/her to interact with the petrol pump.Once he sees the webpage, he can pair his phone to the petrol pump( beacon ) and enter the volume of the fluid to be filled in his phone.On sending the command to fill, the beacon recieves it and turns the valve ON till the said amount is filled.
 At last, this guy can disconnect from the beacon.
 
-{% include image.html img="images/2016/physical-web/three.png" title="three" caption="Block Diagram" %}
+{% include image.html img="images/2016/physical-web/three.png" title="three" caption="Block Diagram" url="http://arunkrweb.github.io/images/2016/physical-web/three.png" %}
 
 
 ## Web Bluetooth API and the Web Application
