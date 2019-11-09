@@ -4,7 +4,7 @@ title: 'Intuitive Explanation of Policy Gradient'
 date: 2019-11-05T21:56:19+00:00
 author: arun
 author_profile: false
-excerpt: "In this post I will give an intuitive explaination of Policy Gradient so that it becomes easier to implement. Much of what is known to a developer about the Policy Gradient method in Reinforcement Learning is still not very clear given the kind of language used in the research papers and the blog articles."
+excerpt: "In this post I will give an intuitive explaination of Policy Gradient so that it becomes easier to implement. Much of what is known to a developer about the Policy Gradient method in Reinforcement Learning is still not very clear given the kind of mathematical language used in the research papers and the blog articles."
 
 permalink: /posts/2019/11/intuitive-pg/
 categories:
