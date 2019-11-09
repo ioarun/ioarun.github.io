@@ -30,7 +30,7 @@ To summarize Policy Gradient in one line, it can be said that it is <b>the metho
 
 <h2> Policy Gradient for Discrete Actions </h2>
 
-{% include image.html img="images/2019/pg/policy-network.png" title="policy" caption="A neural network policy. Being stochastic in nature, it doesn't predict the exact actions to take but the probability distribution over possible actions." url="http://arunkrweb.github.io/images/2019/pg/policy-network.png" %}
+{% include image.html img="images/2019/pg/policy-network.png" title="policy" caption="A neural network policy. Being stochastic in nature, it doesn't predict the exact actions to take but the probability distribution over possible actions." url="http://ioarun.github.io/images/2019/pg/policy-network.png" %}
 
 Let's take an example of Pong. There are two discrete actions - UP and DOWN. At any instant, we have to chose either of the two actions. There can never be a scenario where we have to chose both the actions simultaneously (a case where we use joint probability distribution is discussed later).<br/><br/>
 
@@ -80,7 +80,7 @@ log_likelihood = 1.log(prob) + 0.log(1-prob) # fake labels : 1, 0
 
 <h2> Policy Gradient for Continuous Actions </h2>
 
-{% include image.html img="images/2019/pg/policy-network-continuous.png" title="policy" caption="A neural network policy that outputs a probability distribution over actions." url="http://arunkrweb.github.io/images/2019/pg/policy-network-continuous.png" %}
+{% include image.html img="images/2019/pg/policy-network-continuous.png" title="policy" caption="A neural network policy that outputs a probability distribution over actions." url="http://ioarun.github.io/images/2019/pg/policy-network-continuous.png" %}
 
 The policy network for the continuous action space is similar to the discrete actions except that the probability distribution is not discrete but continuous and is defined by the parameters `\mu` and `\sigma` . These parameters are the output of the network. In case where there are multiple outputs (multi-dimensional actions, or multivariate outputs), the joint probability distribution is found by multiplying individual probability density functions. In case where the output is a single action (e.g, one motor torque), the likelihood (or probability distribution) is very straightforward. At every time-step in the episode, we sample action `x` from this distribution whose mean is `\mu` and std. deviation is `\sigma`. The way the sampling is done may look as follows:
 
