@@ -23,7 +23,7 @@ tags:
 <head>
 <body>
 
-In this post I will give an intuitive explaination of Policy Gradient so that it becomes easier to implement. Much of what is known to a developer about the Policy Gradient method in Reinforcement Learning is still not very clear given the kind of mathematical language used in the research papers and the blog articles. It might be confusing as to how the algorithm is applied to discrete and continuous actions with very similar structure of the policy gradient. The reason for writing this article is to put down my thoughts and understanding of the topic and hopefully give a helpful insights to the reader. So let's get started.<br/><br/>
+In this post I will give an intuitive explanation of Policy Gradient so that it becomes easier to implement. Much of what is known to a developer about the Policy Gradient method in Reinforcement Learning is still not very clear given the kind of mathematical language used in the research papers and the blog articles. It might be confusing as to how the algorithm is applied to discrete and continuous actions with very similar structure of the policy gradient. The reason for writing this article is to put down my thoughts and understanding of the topic and hopefully give a helpful insights to the reader. So let's get started.<br/><br/>
 <!--more-->
 
 To summarize Policy Gradient in one line, it can be said that it is <b>the method by which we try to maximize the likelihood of the sequence of actions that cause favourable outcomes</b>. These favourable outcomes can be winning a game of DOTA, landing a rover on moon, achieving walking gait by a robot, etc. And how do we maximize the likelihood of favourable outcomes ? We will come to that later but first let's start from the begining. The policy in policy gradient is represented (mostly) by a function approximator like a neural network. How do we model a neural network? We model it using network parameters `\theta` that is nothing but network weights. We can call this policy network as `\pi_theta` (policy π parameterized with `\theta`). The input to this network (policy) is the current state (`s_t`) and the output is a <b>probability distribution</b> over next action.
@@ -140,11 +140,11 @@ Note that for single action, the above equation boils down to the single-dimensi
 
 <h2>Maximize the likelihood by updating weights</h2>
 
-The next step from here is to maximize this log-likelihood expression. And the way this can be done is by using various optimization algorithm. One such algorithm is gradient ascent. For that, we find the derivative of our log-likelihood term with respect to the network parameters (weights) and backpropagate the term through the network. 
+The next step from here is to maximize this log-likelihood expression. And the way this can be done is by a) <b>multiplying the log-likelihood expression with the discounted sum of rewards, </b>b) find the derivative of the result with respect to the network parameters (weights) using backpropagation and c) optimize the parameters using algorithms like gradient ascent.
 
 {% highlight python %}
 
-weights = weights + (learning_rate * derivative_of_the_log_likelihood_wrt_weights)
+weights = weights + (learning_rate * derivative_of_the_log_likelihood_wrt_weights * discounted sum of rewards)
 
 {% endhighlight %} 
 
